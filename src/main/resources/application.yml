@@ -1,1 +1,13 @@
-
+spring:
+  output:
+    ansi:
+      enabled: always
+  application:
+    name : kafka-producer
+  kafka:
+    bootstrap-servers: localhost:9092
+logging:
+  level:
+    org.lgw.kafkaproducer: info
+  pattern:
+    console: "%green(%d{YYYY-MM-dd HH:mm:ss})|%red([%t])|%highlight(%-5level)|%yellow(%class{10}.%method)|%msg%n"
